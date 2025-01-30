@@ -1,5 +1,6 @@
 package org.universiapolis.fablab.pfe.patient_management_service.controller;
 
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.universiapolis.fablab.pfe.patient_management_service.model.Patient;
@@ -9,6 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/patients")
+@RefreshScope
+
 public class PatientController {
 
     private final PatientService patientService;
