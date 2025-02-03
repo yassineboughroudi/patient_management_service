@@ -7,8 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
-@Entity
+@Entity // ✅ This tells Spring that this is a JPA entity
 @Table(name = "patients")
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class Patient {
