@@ -38,13 +38,13 @@ public class PatientService {
 
         Patient existingPatient = optionalPatient.get();
 //        // Update fields
-//        existingPatient.setFirstName(updatedPatient.getFirstName());
-//        existingPatient.setLastName(updatedPatient.getLastName());
-//        existingPatient.setGender(updatedPatient.getGender());
-//        existingPatient.setDateOfBirth(updatedPatient.getDateOfBirth());
-//        existingPatient.setPhoneNumber(updatedPatient.getPhoneNumber());
-//        existingPatient.setEmail(updatedPatient.getEmail());
-//        existingPatient.setInsuranceProvider(updatedPatient.getInsuranceProvider());
+        existingPatient.setFirstName(updatedPatient.getFirstName());
+        existingPatient.setLastName(updatedPatient.getLastName());
+        existingPatient.setGender(updatedPatient.getGender());
+        existingPatient.setDateOfBirth(updatedPatient.getDateOfBirth());
+        existingPatient.setPhoneNumber(updatedPatient.getPhoneNumber());
+        existingPatient.setEmail(updatedPatient.getEmail());
+        existingPatient.setInsuranceProvider(updatedPatient.getInsuranceProvider());
 
         return patientRepository.save(existingPatient);
     }
